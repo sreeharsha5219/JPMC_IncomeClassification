@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.vscode/
+.DS_Store
+
+# Optional: if you later decide not to track large outputs, uncomment:
+# reports/eda/
+# reports/plots/
+# models/
+# outputs/
+
+tmp_rewrite/
+
+tmp_rewrite/

@@ -1,0 +1,41 @@
+column,missing_count,missing_pct,missing_weight,missing_weight_pct
+migration code-change in msa,99696,0.4996717170451527,174675307.31,0.5030305932995044
+migration code-change in reg,99696,0.4996717170451527,174675307.31,0.5030305932995044
+migration code-move within reg,99696,0.4996717170451527,174675307.31,0.5030305932995044
+migration prev res in sunbelt,99696,0.4996717170451527,174675307.31,0.5030305932995044
+country of birth father,6713,0.03364524390671752,11181446.120000001,0.0322003697162984
+country of birth mother,6119,0.030668143522300687,10201066.68,0.029377069394366732
+country of birth self,3393,0.017005558256441615,5727526.16,0.01649415092935858
+state of previous residence,708,0.003548463084456429,1573471.02,0.004531287638300685
+marital stat,0,0.0,0.0,0.0
+enroll in edu inst last wk,0,0.0,0.0,0.0
+wage per hour,0,0.0,0.0,0.0
+education,0,0.0,0.0,0.0
+detailed occupation recode,0,0.0,0.0,0.0
+detailed industry recode,0,0.0,0.0,0.0
+class of worker,0,0.0,0.0,0.0
+age,0,0.0,0.0,0.0
+full or part time employment stat,0,0.0,0.0,0.0
+major industry code,0,0.0,0.0,0.0
+race,0,0.0,0.0,0.0
+major occupation code,0,0.0,0.0,0.0
+sex,0,0.0,0.0,0.0
+member of a labor union,0,0.0,0.0,0.0
+reason for unemployment,0,0.0,0.0,0.0
+hispanic origin,0,0.0,0.0,0.0
+detailed household summary in household,0,0.0,0.0,0.0
+detailed household and family stat,0,0.0,0.0,0.0
+region of previous residence,0,0.0,0.0,0.0
+tax filer stat,0,0.0,0.0,0.0
+capital losses,0,0.0,0.0,0.0
+dividends from stocks,0,0.0,0.0,0.0
+capital gains,0,0.0,0.0,0.0
+live in this house 1 year ago,0,0.0,0.0,0.0
+family members under 18,0,0.0,0.0,0.0
+num persons worked for employer,0,0.0,0.0,0.0
+citizenship,0,0.0,0.0,0.0
+own business or self employed,0,0.0,0.0,0.0
+fill inc questionnaire for veteran's admin,0,0.0,0.0,0.0
+veterans benefits,0,0.0,0.0,0.0
+weeks worked in year,0,0.0,0.0,0.0
+year,0,0.0,0.0,0.0

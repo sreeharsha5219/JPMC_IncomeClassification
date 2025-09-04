@@ -1,0 +1,224 @@
+column,category,weighted_count,weighted_share
+citizenship,Native- Born in the United States,312391158.81,0.8996252096401363
+citizenship,Foreign born- Not a citizen of U S ,20944527.22,0.060316126624332875
+citizenship,Foreign born- U S citizen by naturalization,9195009.12,0.026479821127889637
+citizenship,Native- Born abroad of American Parent(s),2954360.24,0.008507977499705744
+citizenship,Native- Born in Puerto Rico or U S Outlying,1760837.08,0.005070865107935369
+class of worker,Not in universe,170870416.45,0.4920732545879205
+class of worker,Private,129166474.73,0.3719740896320587
+class of worker,Self-employed-not incorporated,14515485.37,0.04180174822731431
+class of worker,Local government,13748350.23,0.03959254962587578
+class of worker,State government,7165720.68,0.02063586880475217
+class of worker,Self-employed-incorporated,5652140.19,0.016277054135315112
+class of worker,Federal government,5053903.68,0.014554250430583933
+class of worker,Never worked,807658.26,0.0023258972316563165
+class of worker,Without pay,265742.88,0.0007652873245230931
+country of birth father,United-States,285087652.24,0.8209964708643166
+country of birth father,Mexico,15232341.78,0.043866153956928326
+country of birth father,?,11181446.12,0.0322003697162984
+country of birth father,Italy,3760459.18,0.01082938419588327
+country of birth father,Puerto-Rico,3024702.92,0.008710550608633379
+country of birth father,Germany,2323452.97,0.006691088420004083
+country of birth father,Poland,2142548.47,0.0061701189746545485
+country of birth father,Canada,2106979.89,0.006067688446975743
+country of birth father,Philippines,1844091.81,0.005310622386006534
+country of birth father,Cuba,1493421.54,0.0043007608509840695
+country of birth mother,United-States,287021211.61,0.8265647422591095
+country of birth mother,Mexico,14884117.49,0.04286333636411811
+country of birth mother,?,10201066.68,0.029377069394366732
+country of birth mother,Italy,3083999.66,0.008881313578868148
+country of birth mother,Puerto-Rico,2776872.94,0.007996848919501346
+country of birth mother,Germany,2455026.5,0.007069994356267583
+country of birth mother,Canada,2268895.76,0.0065339743657184335
+country of birth mother,Philippines,2016760.77,0.005807875092933565
+country of birth mother,Poland,1937589.16,0.005579876398876039
+country of birth mother,El-Salvador,1667132.08,0.004801013103831114
+country of birth self,United-States,312388174.48,0.8996166153556114
+country of birth self,Mexico,8880586.28,0.0255743450752761
+country of birth self,?,5727526.16,0.01649415092935858
+country of birth self,Puerto-Rico,1561995.79,0.004498241228684792
+country of birth self,Germany,1542548.52,0.004442236908916834
+country of birth self,Philippines,1384610.81,0.0039874073099932265
+country of birth self,Canada,1182618.94,0.0034057103788554424
+country of birth self,Cuba,1093367.27,0.003148683090886267
+country of birth self,El-Salvador,1043763.38,0.003005833625779101
+country of birth self,England,797181.57,0.002295726421209926
+detailed household and family stat,Householder,91596449.5,0.2637797926088165
+detailed household and family stat,Child <18 never marr not in subfamily,83782077.81,0.2412759362365626
+detailed household and family stat,Spouse of householder,71551130.9,0.20605321028003692
+detailed household and family stat,Nonfamily householder,38663476.27,0.11134322135528298
+detailed household and family stat,Child 18+ never marr Not in a subfamily,24052052.8,0.06926519023426016
+detailed household and family stat,Secondary individual,12055761.99,0.034718227778724686
+detailed household and family stat,Other Rel 18+ ever marr not in subfamily,3524633.65,0.010150252966072183
+detailed household and family stat,Other Rel 18+ never marr not in subfamily,3353780.84,0.009658230414603813
+detailed household and family stat,Grandchild <18 never marr child of subfamily RP,3267454.13,0.009409626437214914
+detailed household and family stat,Child 18+ ever marr Not in a subfamily,2387277.63,0.006874890910930635
+detailed household summary in household,Householder,130276393.13,0.37517043672807476
+detailed household summary in household,Child under 18 never married,83963152.03,0.2417973944421932
+detailed household summary in household,Spouse of householder,71566941.88,0.20609874279847082
+detailed household summary in household,Child 18 or older,28908508.76,0.08325082999361187
+detailed household summary in household,Other relative of householder,17544724.76,0.05052536297896097
+detailed household summary in household,Nonrelative of householder,14720887.92,0.04239326724727722
+detailed household summary in household,Group Quarters- Secondary individual,194318.32,0.0005595986135870216
+detailed household summary in household,Child under 18 ever married,70965.67,0.00020436719782403477
+detailed industry recode,0,171678074.71,0.4943991518195769
+detailed industry recode,33,30561420.02,0.08801088992763341
+detailed industry recode,43,14362986.28,0.04136258078629649
+detailed industry recode,4,10699417.8,0.030812222785110026
+detailed industry recode,42,8266903.09,0.02380705796459266
+detailed industry recode,45,8053509.25,0.02319252559825679
+detailed industry recode,37,7756533.24,0.02233729299093183
+detailed industry recode,29,7486663.67,0.021560121609348636
+detailed industry recode,41,6833429.98,0.019678936823105453
+detailed industry recode,32,6456142.88,0.0185924240430224
+detailed occupation recode,0,171678074.71,0.4943991518195769
+detailed occupation recode,2,15529144.91,0.04472088870379259
+detailed occupation recode,26,14236493.0,0.04099830497269294
+detailed occupation recode,19,9657682.61,0.0278122299483625
+detailed occupation recode,29,9024991.33,0.02599020327009255
+detailed occupation recode,36,7306073.76,0.021040058121439695
+detailed occupation recode,34,7226937.92,0.020812162437959907
+detailed occupation recode,10,6416373.91,0.018477897216752064
+detailed occupation recode,16,6098923.71,0.017563702961661126
+detailed occupation recode,33,5969313.73,0.017190451663919144
+education,High school graduate,85589219.42,0.246480149300526
+education,Children,79104048.39,0.2278041298842264
+education,Some college but no degree,50296154.39,0.1448430506470146
+education,Bachelors degree(BA AB BS),35738476.21,0.10291979541007124
+education,10th grade,13272987.31,0.03822359773815527
+education,7th and 8th grade,13126143.41,0.03780071613412683
+education,11th grade,12290046.29,0.035392920568705605
+education,Masters degree(MA MS MEng MEd MSW MBA),11475673.95,0.03304768810473814
+education,9th grade,10520947.09,0.030298262177165844
+education,Associates degree-occup /vocational,9186755.06,0.026456051055502926
+enroll in edu inst last wk,Not in universe,324504022.69,0.9345078796519823
+enroll in edu inst last wk,High school,12072292.68,0.034765832920667226
+enroll in edu inst last wk,College or university,10669577.1,0.03072628742735031
+fill inc questionnaire for veteran's admin,Not in universe,343768060.78,0.9899845274907016
+fill inc questionnaire for veteran's admin,No,2782540.33,0.008013169890095661
+fill inc questionnaire for veteran's admin,Yes,695291.36,0.0020023026192025266
+full or part time employment stat,Children or Armed Forces,212906991.85,0.6131303392404962
+full or part time employment stat,Full-time schedules,72638622.25,0.20918497187486687
+full or part time employment stat,Not in labor force,46841308.44,0.13489377255642213
+full or part time employment stat,PT for non-econ reasons usually FT,5997410.47,0.01727136475924806
+full or part time employment stat,Unemployed full-time,4214827.0,0.012137874317301352
+full or part time employment stat,PT for econ reasons usually PT,2160594.76,0.006222088747058865
+full or part time employment stat,Unemployed part- time,1535413.9,0.004421690603964885
+full or part time employment stat,PT for econ reasons usually FT,950723.8,0.0027378979006415084
+hispanic origin,All other,309076332.03,0.8900791592709835
+hispanic origin,Mexican-American,11949801.13,0.03441308130385557
+hispanic origin,Mexican (Mexicano),10986670.9,0.031639455320408676
+hispanic origin,Central or South American,4890342.5,0.014083226342043762
+hispanic origin,Puerto Rican,3689784.42,0.010625854761748623
+hispanic origin,Other Spanish,2582694.16,0.007437652153720233
+hispanic origin,NA,1643034.87,0.004731617869725985
+hispanic origin,Cuban,1470804.46,0.004235628100704081
+hispanic origin,Do not know,579513.08,0.0016688839020610343
+hispanic origin,Chicano,376914.92,0.001085440974748357
+live in this house 1 year ago,Not in universe under 1 year old,177346011.87,0.5107216981272763
+live in this house 1 year ago,Yes,141277873.63,0.4068525407891054
+live in this house 1 year ago,No,28622006.97,0.0824257610836182
+major industry code,Not in universe or children,171678074.71,0.4943991518195769
+major industry code,Retail trade,30561420.02,0.08801088992763341
+major industry code,Manufacturing-durable goods,16489916.24,0.04748772151833194
+major industry code,Education,14362986.28,0.04136258078629649
+major industry code,Manufacturing-nondurable goods,12199769.32,0.03513294061802038
+major industry code,Finance insurance and real estate,11098372.08,0.031961132789954695
+major industry code,Business and repair services,10728090.03,0.0308947931786604
+major industry code,Construction,10699417.8,0.030812222785110026
+major industry code,Medical except hospital,8266903.09,0.02380705796459266
+major industry code,Public administration,8169592.8,0.023526823433068552
+major occupation code,Not in universe,171678074.71,0.4943991518195769
+major occupation code,Adm support including clerical,26353681.88,0.07589343013546748
+major occupation code,Professional specialty,24614433.89,0.07088473736842414
+major occupation code,Executive admin and managerial,22191168.83,0.06390620972404211
+major occupation code,Sales,21215340.36,0.061096015302277124
+major occupation code,Other service,20967471.6,0.060382201934358275
+major occupation code,Precision production craft & repair,18843253.56,0.05426487099952649
+major occupation code,Machine operators assmblrs & inspctrs,11338598.27,0.032652937056640886
+major occupation code,Handlers equip cleaners etc ,7580926.14,0.021831579017611985
+major occupation code,Transportation and material moving,7265852.05,0.020924227492849973
+marital stat,Never married,151918080.99,0.4374942491310385
+marital stat,Married-civilian spouse present,144404241.41,0.41585586623598625
+marital stat,Divorced,23177469.11,0.06674656090281153
+marital stat,Widowed,17549121.46,0.05053802461181349
+marital stat,Separated,6448192.12,0.01856952741509271
+marital stat,Married-spouse absent,2648742.06,0.007627857139386711
+marital stat,Married-A F spouse present,1100045.32,0.0031679145638707227
+member of a labor union,Not in universe,312852011.29,0.9009523743093046
+member of a labor union,No,29098887.43,0.08379908318861963
+member of a labor union,Yes,5294993.75,0.015248542502075689
+migration code-change in msa,?,174675307.31,0.5030305932995044
+migration code-change in msa,Nonmover,141277873.63,0.4068525407891054
+migration code-change in msa,MSA to MSA,20736750.93,0.05971777169917577
+migration code-change in msa,NonMSA to nonMSA,4189388.16,0.012064615452181161
+migration code-change in msa,Not in universe,2670704.56,0.00769110482777196
+migration code-change in msa,MSA to nonMSA,1219001.67,0.0035104854987026645
+migration code-change in msa,NonMSA to MSA,1158451.38,0.003336112550561223
+migration code-change in msa,Abroad to MSA,796732.01,0.002294431776666251
+migration code-change in msa,Not identifiable,421081.95,0.0012126333504042211
+migration code-change in msa,Abroad to nonMSA,100600.87,0.00028971075592691513
+migration code-change in reg,?,174675307.31,0.5030305932995044
+migration code-change in reg,Nonmover,141277873.63,0.4068525407891054
+migration code-change in reg,Same county,17656017.46,0.050845864106298606
+migration code-change in reg,Different county same state,5539192.74,0.015951787652833224
+migration code-change in reg,Not in universe,2670704.56,0.00769110482777196
+migration code-change in reg,Different region,2088193.75,0.006013588051816646
+migration code-change in reg,Different state same division,1688479.22,0.004862488676222065
+migration code-change in reg,Abroad,900861.16,0.002594303286331397
+migration code-change in reg,Different division same region,749262.64,0.0021577293101162653
+migration code-move within reg,?,174675307.31,0.5030305932995044
+migration code-move within reg,Nonmover,141277873.63,0.4068525407891054
+migration code-move within reg,Same county,17656017.46,0.050845864106298606
+migration code-move within reg,Different county same state,5539192.74,0.015951787652833224
+migration code-move within reg,Not in universe,2670704.56,0.00769110482777196
+migration code-move within reg,Different state in South,1799129.61,0.005181140076856155
+migration code-move within reg,Different state in West,1020952.3,0.0029401421935846346
+migration code-move within reg,Different state in Midwest,994775.11,0.0028647570254151894
+migration code-move within reg,Abroad,900861.16,0.002594303286331397
+migration code-move within reg,Different state in Northeast,711078.59,0.0020477667422989974
+migration prev res in sunbelt,?,174675307.31,0.5030305932995044
+migration prev res in sunbelt,Not in universe,143948578.19,0.41454364561687734
+migration prev res in sunbelt,No,16856551.14,0.048543558053624224
+migration prev res in sunbelt,Yes,11765455.83,0.033882203029993986
+own business or self employed,0,313713840.28,0.9034342726087191
+own business or self employed,2,28741696.34,0.08277044297214577
+own business or self employed,1,4790355.85,0.013795284419134943
+race,White,287845784.71,0.828939350909293
+race,Black,44484896.58,0.1281077690036124
+race,Asian or Pacific Islander,8920935.65,0.025690543339603984
+race,Other,3940880.24,0.011348961428940355
+race,Amer Indian Aleut or Eskimo,2053395.29,0.0059133753185501
+reason for unemployment,Not in universe,336111595.97,0.967935411933024
+reason for unemployment,Other job loser,3785951.28,0.010902796439347611
+reason for unemployment,Re-entrant,3779794.31,0.01088506557446623
+reason for unemployment,Job loser - on layoff,1624527.0,0.004678318837537724
+reason for unemployment,Job leaver,1136365.65,0.0032725099839681334
+reason for unemployment,New entrant,807658.26,0.0023258972316563165
+region of previous residence,Not in universe,318623885.5,0.9175742389163817
+region of previous residence,South,10094181.23,0.029069260281810467
+region of previous residence,West,7169213.99,0.02064592885175561
+region of previous residence,Midwest,6458945.84,0.018600496017553366
+region of previous residence,Northeast,3998804.75,0.011515772646167363
+region of previous residence,Abroad,900861.16,0.002594303286331397
+sex,Female,177803238.33,0.5120384205706945
+sex,Male,169442654.14,0.48796157942930546
+state of previous residence,Not in universe,318623885.5,0.9175742389163817
+state of previous residence,California,4069633.42,0.011719745310886844
+state of previous residence,Utah,2383517.93,0.006864063713024113
+state of previous residence,Florida,1726156.06,0.004970990578813339
+state of previous residence,?,1573471.02,0.004531287638300685
+state of previous residence,North Carolina,1430456.58,0.004119434127283689
+state of previous residence,Oklahoma,1111654.95,0.0032013480191015946
+state of previous residence,Indiana,992196.36,0.002857330731667963
+state of previous residence,Abroad,988157.66,0.0028457000685339164
+state of previous residence,Minnesota,972575.41,0.002800826247596362
+tax filer stat,Nonfiler,127891770.69,0.3683031922430849
+tax filer stat,Joint both under 65,115645780.57,0.33303714479499885
+tax filer stat,Single,69519018.29,0.2002011249017324
+tax filer stat,Joint both 65+,14357695.52,0.04134734443616325
+tax filer stat,Head of household,13178181.52,0.03795057567495493
+tax filer stat,Joint one under 65 & one 65+,6653445.88,0.01916061794906564
+veterans benefits,2,264690184.85,0.7622557691531734
+veterans benefits,0,79077875.93,0.2277287583375284
+veterans benefits,1,3477831.69,0.010015472509298188
