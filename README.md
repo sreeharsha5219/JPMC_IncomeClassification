@@ -6,7 +6,7 @@ This project trains a classifier to predict whether an individual's income is be
 
 - Input files in this folder:
   - `census-bureau.data` has comma-separated values, 40 features + `weight` + `label`.
-  - `census-bureau.columns` — header names aligned with the data file. Note: the last two columns are `year` and `label`.
+  - `census-bureau.columns` - header names aligned with the data file. Note: the last two columns are `year` and `label`.
 
 Missing values are represented with `?` in the data file.
 
