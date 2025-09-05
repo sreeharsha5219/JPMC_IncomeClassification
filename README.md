@@ -53,7 +53,6 @@ The key deliverables and their locations in this repo:
 - Feature importance: `reports/permutation_importance.csv`
 - Segments: `outputs/segments.csv`, `reports/segment_profiles.csv`
 - Model artifact: `models/classifier.joblib`
-- XGBoost architecture diagram: `report/xgboost_architecture.md`
 
 ## Usage
 
