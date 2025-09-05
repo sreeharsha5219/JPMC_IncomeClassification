@@ -8,6 +8,8 @@ Audience: Retail marketing and CRM stakeholders; data science reviewers
 
 ## Executive Summary
 
+For a concise, slide-style overview, see the PDF: `report/Final_Project_report.pdf`.
+
 - Goal: predict income group (< $50k vs ≥ $50k) and segment the population into actionable personas.
 - Data: CPS 1994–1995 weighted survey; 40 features + year + label; 199,523 rows.
 - Best classifier: XGBoost (hist) with a preprocessing pipeline (one‑hot + scaled numerics).
@@ -137,4 +139,3 @@ Artifacts:
 ## 10) Conclusion
 
 The classifier provides strong ranking performance with clear threshold trade‑offs, and the segmentation offers coherent personas for tailored messaging. Combined, they deliver a practical foundation for targeting, budgeting, and creative strategy — ready to pilot with current data and live A/B testing.
-
