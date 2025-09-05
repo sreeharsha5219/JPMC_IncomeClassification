@@ -38,7 +38,22 @@ outputs/
   (generated: cluster assignments)
 report/
   Final_Project_report.md
+  xgboost_architecture.md
 ```
+
+## Deliverables
+
+The key deliverables and their locations in this repo:
+
+- Code: `src/train_classifier.py`, `src/segment.py`, `src/preprocessing.py`, `src/data_loader.py`, `src/eda.py`
+- Report: `report/Final_Project_report.md` (client report), `report/Project_Report.pdf` (PDF)
+- Metrics: `reports/classification_metrics.json`
+- Plots: `reports/plots/roc_curve.png`, `reports/plots/confusion_matrix.png`, `reports/plots/threshold_metrics.png`
+- Threshold analysis: `reports/threshold_metrics.csv`
+- Feature importance: `reports/permutation_importance.csv`
+- Segments: `outputs/segments.csv`, `reports/segment_profiles.csv`
+- Model artifact: `models/classifier.joblib`
+- XGBoost architecture diagram: `report/xgboost_architecture.md`
 
 ## Usage
 
