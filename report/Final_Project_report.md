@@ -259,3 +259,148 @@ actionable personas, each with distinct marketing strategies. By combining these
 approaches, the client gains a powerful toolkit to maximize campaign ROI, engage 
 customers more personally, and manage marketing budgets effectively.  
  
+# Income Classification & Customer Segmentation — Final Report
+
+Author: Sree Harsha Koyi  
+Date: 2025‑09‑04  
+Audience: Retail marketing and CRM stakeholders; data science reviewers
+
+---
+
+## 1) Objectives
+
+- Build a classifier to predict whether an individual’s income is < $50k or ≥ $50k using weighted CPS data (1994–1995).
+- Build a segmentation model to group individuals into actionable marketing personas and outline how to target them.
+
+Guiding principles: keep the pipeline reproducible, communicate trade‑offs clearly, and focus on business usefulness rather than exhaustive model tuning.
+
+---
+
+## 2) Data Understanding
+
+- Source: CPS 1994–1995 extract. Each row has a survey `weight` and an income `label`.
+- Shape: 199,523 rows × 42 columns (40 features + `year` + `label`).
+- Types: mixed numeric and categorical (e.g., age, wages, education, industry, occupation, marital status).
+- Label mapping: any `label` containing a `+` → 1 (≥ $50k), else 0 (< $50k).
+- Class balance: skewed toward < $50k (weighted). Metrics and selection use `sample_weight` accordingly.
+
+EDA artifacts (weighted):
+- Missingness by column: `reports/eda/missingness.csv`
+- Numeric summaries (mean/std/quantiles): `reports/eda/numeric_summary.csv`
+- Categorical top categories by share: `reports/eda/categorical_distributions.csv`
+
+---
+
+## 3) Preprocessing & Feature Engineering
+
+- Numeric: coerce to numeric → median imputation → standard scaling.
+- Categorical: map `?` → NA → most‑frequent imputation → one‑hot with `handle_unknown=ignore` (safe inference).
+- We exclude `weight` from features and pass it as `sample_weight` during training and evaluation.
+- Optional dimensionality controls (where helpful):
+  - Mutual information feature selection (top 50%).
+  - TruncatedSVD (100 components) to reduce variance from one‑hot encoding.
+
+Implementation: see `src/preprocessing.py` (pipeline) and `src/data_loader.py` (schema and types).
+
+---
+
+## 4) Classification Modeling
+
+Candidate models (each wrapped in the same preprocessing, with optional dimension reduction):
+- Logistic Regression (L2) — interpretable baseline.
+- Random Forest (`n_estimators=300`) — nonlinear ensemble.
+- XGBoost (`n_estimators=300`, `max_depth=6`, `learning_rate=0.1`, `tree_method=hist`) — fast tree boosting for interactions.
+
+Model selection: 5‑fold stratified CV on the training split using weighted ROC AUC; select the best pipeline by CV score, then refit on full training data and evaluate on the held‑out test set.
+
+---
+
+## 5) Classification Results
+
+Headline results (see `reports/classification_metrics.json` for exact values and top candidates):
+- Best by CV: XGBoost without extra reduction (`xgb__none`).
+- Test metrics (weighted):
+  - ROC AUC ≈ 0.956
+  - Accuracy ≈ 0.956
+  - Precision ≈ 0.743
+  - Recall ≈ 0.492
+  - F1 ≈ 0.592
+
+Threshold trade‑offs:
+- A threshold–metrics sweep is saved to `reports/threshold_metrics.csv` and plotted in `reports/plots/threshold_metrics.png`.
+- Lowering threshold from 0.50 to ≈ 0.26 improves recall (≈ 0.69) and F1 (≈ 0.63) with modest accuracy change — good for broad outreach. Higher thresholds favor precision for high‑cost channels.
+
+Feature importance (directional):
+- Global permutation importance (`reports/permutation_importance.csv`) highlights age, weeks worked, tax filer status, education, and capital gains/dividends — face‑valid economic drivers of income.
+
+Key artifacts:
+- ROC curve: `reports/plots/roc_curve.png`
+- Confusion matrix (weighted counts): `reports/plots/confusion_matrix.png`
+- Metrics JSON: `reports/classification_metrics.json`
+
+---
+
+## 6) Segmentation Modeling
+
+Method: KMeans on the same preprocessed feature space (numeric scaled + categorical one‑hot). We use `k=6` to balance interpretability and differentiation. The silhouette score is ≈ 0.19 (reasonable in high‑dimensional, mixed‑type space).
+
+Persona highlights (examples):
+- High‑Earning Professionals — higher education, notable capital income; targets for premium products/financial services.
+- Prime Working‑Age Retail/Clerical (two clusters) — value‑oriented offers, loyalty programs.
+- Full‑Time Hourly (long weeks) — practical goods, tools, durable products.
+- Older Adults Not in Labor Force — healthcare, retirement, convenience/leisure.
+- Dependents/Children — non‑earners; use only for household‑level targeting.
+
+Artifacts: record assignments in `outputs/segments.csv`; weighted profiles in `reports/segment_profiles.csv`.
+
+---
+
+## 7) Business Recommendations
+
+1) Targeting & thresholds
+- Rank by predicted probability; pick thresholds to match campaign cost/goal.
+- Broad awareness: threshold ≈ 0.25–0.35; high‑CPM precision: threshold ≈ 0.50–0.65.
+
+2) Segment‑tailored strategy
+- Pair classifier ranks with segment personas to tailor creative, offers, and channels.
+
+3) Measurement
+- Run A/B tests with control groups; monitor conversion rate, AOV, and LTV uplift.
+
+4) Fairness & compliance
+- Track subgroup metrics and calibration across sensitive proxies; adjust thresholds or apply post‑processing if required by policy.
+
+5) Lifecycle
+- Monitor drift and retrain periodically; prefer fresher data for production.
+
+---
+
+## 8) Risks & Limitations
+
+- Data recency: CPS 1994–1995; validate on modern samples before production use.
+- Threshold definition: $50k is historical; consider inflation‑adjusted or continuous income targets.
+- Fairness: demographic correlates require careful governance in marketing contexts.
+
+---
+
+## 9) Implementation Notes & Artifacts
+
+- Code: `src/train_classifier.py`, `src/segment.py`, `src/preprocessing.py`, `src/data_loader.py`, `src/eda.py`
+- Metrics/plots: `reports/` (ROC, confusion, threshold curves, importance)
+- Model: `models/classifier.joblib` (pipeline: preprocessing + optional FS/FE + classifier)
+- Segments: `outputs/segments.csv`, `reports/segment_profiles.csv`
+- EDA: `reports/eda/*`
+
+---
+
+## 10) References
+
+- scikit‑learn User Guide (pipelines, preprocessing, model evaluation)
+- Hastie, Tibshirani, Friedman — The Elements of Statistical Learning
+- Kaufman & Rousseeuw — Finding Groups in Data (silhouette)
+
+---
+
+## 11) Conclusion
+
+The classifier provides strong ranking power with clear threshold trade‑offs, and the segmentation yields coherent, actionable personas. Together they form a practical foundation for targeting, budgeting, and creative strategy — ready for pilot with current data and ongoing monitoring.
