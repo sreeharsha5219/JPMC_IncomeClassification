@@ -38,7 +38,7 @@ outputs/
   (generated: cluster assignments)
 report/
   Final_Project_report.md
-  xgboost_architecture.md
+  JPMC_Risk_Assesment.pdf
 ```
 
 ## Deliverables
@@ -120,3 +120,4 @@ Outputs:
 ## Reporting
 
 - See `report/Final_Project_report.md` for the project report. You can edit this directly; it documents EDA, preprocessing, modeling choices, evaluation, and business recommendations.
+
