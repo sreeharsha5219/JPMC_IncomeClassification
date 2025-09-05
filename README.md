@@ -118,5 +118,5 @@ Outputs:
 
 ## Reporting
 
-- See `report/Final_Project_report.md` for the project report. You can edit this directly; it documents EDA, preprocessing, modeling choices, evaluation, and business recommendations.
+- See `report/Final_Project_report.pdf` for the project report. it documents EDA, preprocessing, modeling choices, evaluation, and business recommendations.
 
